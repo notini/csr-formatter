@@ -66,3 +66,5 @@ int main(int argc, char* argv[]){
   cout << "Adjcents to 2: " << printArray(getAdjVertices(asym.col_ind, asym.row_ptr, 2)) << '\n';
 }
 ```
+
+Any doubts/suggestions, feel free to contact me.
