@@ -22,7 +22,7 @@ When dealing with a simetric matrix:
 #include "csr_formatter.h"
 
 int main(int argc, char* argv[]){
-  CSR sym = assemble_simetric_csr_matrix("simetricMatrix.mtx");
+  CSR sim = assemble_simetric_csr_matrix("simetricMatrix.mtx");
 }
 ```
 Otherwise (asymmetric):
