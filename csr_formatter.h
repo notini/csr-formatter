@@ -102,7 +102,7 @@ CSR assemble_csr_matrix(std::string filePath){
 	return matrix;
 }
 
-CSR assemble_symmetric_csr_matrix(std::string filePath){
+CSR assemble_simetric_csr_matrix(std::string filePath){
 	int M, N, L;
 	vector<int> rows, cols;
 	vector<double> data;
