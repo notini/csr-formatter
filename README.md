@@ -63,7 +63,8 @@ To obtain the adjacency list of a vertex:
 
 int main(int argc, char* argv[]){
   CSR asym = assemble_csr_matrix("asymmetricMatrix.mtx");
-  cout << "Adjcents to 2: " << printArray(getAdjVertices(asym.col_ind, asym.row_ptr, 2)) << '\n';
+  cout << "Adjcents to 2: \n";
+  printArray(getAdjVertices(asym.col_ind, asym.row_ptr, 2));
 }
 ```
 
