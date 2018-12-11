@@ -68,4 +68,6 @@ int main(int argc, char* argv[]){
 }
 ```
 
+The [example](example) folder contains an [example usage file](example/test.cpp) with two example matrices that can be used, one simetric (494_bus.mtx) and one asymmetric (gre_343.mtx).
+
 Any doubts/suggestions, feel free to contact me.
