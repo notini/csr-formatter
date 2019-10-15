@@ -84,17 +84,17 @@ CSR assemble_csr_matrix(std::string filePath){
 	// Read defining parameters:
 	fin >> M >> N >> L;
 	
-	int last_col = 1;
-	matrix.row_ptr.push_back(0);
+	int last_row = 1;
+	matrix.row_ptr.push_back(1);
 	for (int l = 0; l < L; l++){
 		int row, col;
 		double data;
 		fin >> row >> col >> data;
-		matrix.col_ind.push_back(row);
+		matrix.col_ind.push_back(col);
 		matrix.val.push_back(data);
-		if (col > last_col){
-			last_col = col;
-			matrix.row_ptr.push_back(matrix.col_ind.size() - 1);
+		if (row > last_row){
+			last_row = row;
+			matrix.row_ptr.push_back(matrix.col_ind.size());
 		}	
 	}
 	matrix.row_ptr.push_back(matrix.col_ind.size() + 1);
